@@ -1,12 +1,16 @@
 {
-  "manifest_version": 2,
-
   "name": "Google-Redirect",
-  "description": "This extension redirects to Google.",
-  "version": "1.0",
-
+  "description": "Make the current page red",
+  "version": "2.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": false
+  },
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  }
+    "default_title": "Make this page red"
+  },
+  "manifest_version": 2
 }
