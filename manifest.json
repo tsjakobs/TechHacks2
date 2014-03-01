@@ -3,10 +3,15 @@
   "description": "Make the current page red",
   "version": "2.0",
   "permissions": [
-    "activeTab"
+    "notifications",
+	"contextMenus",
+	"tabs",
+	"contentSettings",
+	"http://*/*",
+	"https://*/*"
   ],
   "background": {
-    "scripts": ["popup.js"],
+    "scripts": ["background.js"],
     "persistent": false
   },
   "browser_action": {
