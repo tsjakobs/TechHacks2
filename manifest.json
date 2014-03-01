@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
 
   "name": "Google-Redirect",
   "description": "This extension redirects to Google.",
