@@ -3,7 +3,7 @@ function test(){
 	var url;
 	var title;
 	chrome.tabs.executeScript({
-		"code": "document.getElementById('shortlink-text').value;"
+		"code": "document.URL;"
 	}, function(selection){
 		chrome.tabs.executeScript({
 			"code": "document.title;"
