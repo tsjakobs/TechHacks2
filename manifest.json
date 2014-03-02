@@ -1,21 +1,23 @@
 {
-  "name": "Reddit-Redirect",
-  "description": "Short cut to reddit",
+  "name": "Reddit Bar",
+  "description": "Create watchlist of subreddit",
   "version": "2.0",
   "permissions": [
     "notifications",
 	"contextMenus",
 	"tabs",
+	"cookies",
+	"storage",
 	"contentSettings",
 	"http://*/*",
 	"https://*/*"
   ],
   "background": {
-    "scripts": ["popup.js"],
-    "persistent": false
+   	"scripts": ["right.js","alert.js"]
   },
   "browser_action": {
-    "default_title": "Go to reddit!"
+    "default_title": "Go to reddit!",
+    "default_popup": "popup.html"
   },
   "manifest_version": 2
 }
