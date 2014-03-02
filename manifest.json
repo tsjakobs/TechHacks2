@@ -1,21 +1,23 @@
 {
-  "name": "Google-Redirect",
-  "description": "Make the current page red",
+  "name": "Reddit Bar",
+  "description": "Create watchlist of subreddit",
   "version": "2.0",
   "permissions": [
     "notifications",
 	"contextMenus",
 	"tabs",
+	"cookies",
+	"storage",
 	"contentSettings",
 	"http://*/*",
 	"https://*/*"
   ],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+   	"scripts": ["right.js"]
   },
   "browser_action": {
-    "default_title": "Make this page red"
+    "default_title": "Make this page red",
+    "default_popup": "popup.html"
   },
   "manifest_version": 2
 }
