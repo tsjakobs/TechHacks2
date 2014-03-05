@@ -6,6 +6,7 @@
     "notifications",
 	"contextMenus",
 	"tabs",
+	"alarms",
 	"cookies",
 	"storage",
 	"contentSettings",
@@ -13,7 +14,7 @@
 	"https://*/*"
   ],
   "background": {
-   	"scripts": ["right.js"]
+   	"scripts": ["right.js","background.js"]
   },
   "browser_action": {
     "default_title": "Go to reddit!",
