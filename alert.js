@@ -2,7 +2,7 @@ function notify_me(){
 	var havePermission = true;
 	var curSite = 'reddit.com';
 	
-	chrome.notifications.create(
+	notification = chrome.notifications.create(
 		'new alert!',{
 		type:'basic',
 		iconUrl:'reddit alien.jpg',
@@ -11,14 +11,9 @@ function notify_me(){
 		},
 		
 		function(){
-			
-			if(havePermission){
-				notification.show();
-				notification.addListener(function(){
-				});
-			}
 		}
 	);
+	notification.show();
 }
 
 

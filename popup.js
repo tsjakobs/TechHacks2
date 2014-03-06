@@ -1,9 +1,4 @@
 var site;
-var NewLink = document.createElement("script");
-NewLink.src="alert.js";
-chrome.tabs.executeScript({
-	"code": "document.head.appendChild(NewLink);"
-});
 //notify_me();
 chrome.cookies.getAll({ 'domain': 'reddit.com','session': true }, function(cookies) {
 	var i=0;
