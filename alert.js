@@ -1,4 +1,4 @@
-function notify(){
+function notify_me(){
 	var havePermission = true;
 	var curSite = 'reddit.com';
 	
